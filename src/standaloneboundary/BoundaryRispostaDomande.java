@@ -31,8 +31,8 @@ public class BoundaryRispostaDomande {
         //Text area
         JTextArea rislista = new JTextArea();
         JScrollPane listascroll = new JScrollPane(rislista,
-            ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
-            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+            JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         private JLabel rispondiLabel = new JLabel();
 
 
@@ -50,7 +50,7 @@ public class BoundaryRispostaDomande {
 
         // Ascoltatore di bottone e relative azioni
         private RispondiAA ascoltatoreEtAzioneRispondi;
-        private TornaindietroAA ascoltatoreEtAzioneIndietro;
+        private tornaindietroAA ascoltatoreEtAzioneIndietro;
 
         private ControlloreLinguaAmministratore cl;
 
@@ -87,8 +87,8 @@ public class BoundaryRispostaDomande {
             titolo.setFont(new Font("Verdana", Font.BOLD, 20));
             titolo.setLocation(border, border);
             titolo.setSize(panelTitolo.getWidth(), 35);
-            titolo.setHorizontalAlignment(SwingConstants.CENTER);
-            titolo.setVerticalAlignment(SwingConstants.CENTER);
+            titolo.setHorizontalAlignment(JLabel.CENTER);
+            titolo.setVerticalAlignment(JLabel.CENTER);
             titolo.setText(bundle.getString("boundaryDomande_rispondi_domande_utente"));
 
 
@@ -147,7 +147,7 @@ public class BoundaryRispostaDomande {
 
             // Ascoltatore di bottone e relativa azione
             ascoltatoreEtAzioneRispondi = new RispondiAA();
-            ascoltatoreEtAzioneIndietro = new TornaindietroAA();
+            ascoltatoreEtAzioneIndietro = new tornaindietroAA();
 
 
 
@@ -208,7 +208,7 @@ public class BoundaryRispostaDomande {
 
 
 
-        private class TornaindietroAA implements ActionListener
+        private class tornaindietroAA implements ActionListener
         {
             public void actionPerformed(ActionEvent arg0)
             {

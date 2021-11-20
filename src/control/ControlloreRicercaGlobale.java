@@ -38,22 +38,22 @@ public class ControlloreRicercaGlobale {
         ThreadRicerca tOst= new ThreadRicerca(percorsoOstello,provincia,prezzo,numeroGiorni);
 
         Thread t1= new Thread(tAlb);
-        Thread t3 = new Thread(tBeb);
         Thread t2 = new Thread(tApp);
-        Thread t5 = new Thread(tOst);
+        Thread t3 = new Thread(tBeb);
         Thread t4 = new Thread(tCasa);
+        Thread t5 = new Thread(tOst);
 
         t1.start();
-        t4.start();
         t2.start();
-        t5.start();
         t3.start();
-        
-        t2.join();
+        t4.start();
+        t5.start();
+
         t1.join();
+        t2.join();
         t3.join();
-        t5.join();
         t4.join();
+        t5.join();
 
         locazioniTotali.addAll(ThreadRicerca.getLocazioni());
         return locazioniTotali;

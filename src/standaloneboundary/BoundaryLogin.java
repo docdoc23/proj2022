@@ -8,7 +8,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ResourceBundle;
 
 public class BoundaryLogin extends JFrame
@@ -31,14 +30,14 @@ public class BoundaryLogin extends JFrame
     private BoxSelectItem ascoltatoreBox;
 
     //Bottone
-    private JButton bLogin;
+    public JButton bLogin;
 
 
     // Campi e loro etichette
-    private JLabel     loginLabel = new JLabel();
-    private JTextField loginF = new JTextField();
-    private JLabel     passwordLabel = new JLabel();
-    private JPasswordField passwordF= new JPasswordField();
+    public JLabel     loginLabel = new JLabel();
+    public JTextField loginF = new JTextField();
+    public JLabel     passwordLabel = new JLabel();
+    public JPasswordField passwordF= new JPasswordField();
 
     private JComboBox<String> box;
 
@@ -76,8 +75,8 @@ public class BoundaryLogin extends JFrame
         titolo.setFont(new Font(font, Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(SwingConstants.CENTER);
-        titolo.setVerticalAlignment(SwingConstants.CENTER);
+        titolo.setHorizontalAlignment(JLabel.CENTER);
+        titolo.setVerticalAlignment(JLabel.CENTER);
         titolo.setText(bundle.getString("boundaryLogin_credenziali"));
 
         // Composizione box selettore lingua
@@ -203,14 +202,12 @@ public class BoundaryLogin extends JFrame
                 pannelloLogin.setVisible(false);
 
                 try {
-                	//modifica newinstance piu eccezione multipli catch automatici
-                	this.aClass.getDeclaredConstructor().newInstance();
-                    //this.aClass.newInstance();
+                    this.aClass
+                            .newInstance();
                 } catch (IllegalAccessException |
-                        InstantiationException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException ex) {
+                        InstantiationException ex) {
                     ex.printStackTrace();
-                
-				}
+                }
             }
         }
     }

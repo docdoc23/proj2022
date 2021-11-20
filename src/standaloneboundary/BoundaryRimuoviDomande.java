@@ -26,8 +26,8 @@ public class BoundaryRimuoviDomande {
     //Area di testo
     private JTextArea domandelista = new JTextArea();
     private JScrollPane listascroll = new JScrollPane(domandelista,
-            ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
-            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+            JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
+            JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
 
     //Bottone
@@ -43,7 +43,7 @@ public class BoundaryRimuoviDomande {
     // Ascoltatore di bottone e relative azioni
     private RimuoviAA ascoltatoreEtAzioneRimuovi;
     private VisualizzaAA ascoltatoreEtAzioneVisualizza;
-    private TornaindietroAA ascoltatoreEtAzioneIndietro;
+    private tornaindietroAA ascoltatoreEtAzioneIndietro;
 
     ControlloreRimuoviDomande crf;
     private ControlloreLinguaAmministratore cl;
@@ -83,8 +83,8 @@ public class BoundaryRimuoviDomande {
         titolo.setFont(new Font(fontv, Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(SwingConstants.CENTER);
-        titolo.setVerticalAlignment(SwingConstants.CENTER);
+        titolo.setHorizontalAlignment(JLabel.CENTER);
+        titolo.setVerticalAlignment(JLabel.CENTER);
         titolo.setText(bundle.getString("boundaryDomande_inserisci_domanda_rimozione"));
 
         pannelloRimuovi.add(panelTitolo);
@@ -150,7 +150,7 @@ public class BoundaryRimuoviDomande {
         // Ascoltatore di bottone e relativa azione
         ascoltatoreEtAzioneVisualizza = new VisualizzaAA();
         ascoltatoreEtAzioneRimuovi = new RimuoviAA();
-        ascoltatoreEtAzioneIndietro = new TornaindietroAA();
+        ascoltatoreEtAzioneIndietro = new tornaindietroAA();
 
 
 
@@ -199,7 +199,7 @@ public class BoundaryRimuoviDomande {
     }
 
 
-    private class TornaindietroAA implements ActionListener
+    private class tornaindietroAA implements ActionListener
     {
         public void actionPerformed(ActionEvent arg0)
         {

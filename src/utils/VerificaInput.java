@@ -47,7 +47,7 @@ public class VerificaInput {
         else {
             FileReader f;
             f = new FileReader(percorsoProvince);
-            //BufferedReader b
+            //BufferedReader b;
             //b=new BufferedReader(f)
             try(BufferedReader b = new BufferedReader(f)){
             	String s;
@@ -63,15 +63,15 @@ public class VerificaInput {
                 e.printStackTrace();
             }
             return false;
-            /*String s
+            /*String s;
             while (true) {
-                s = b.readLine()
+                s = b.readLine();
                 if (s == null)
-                    break
+                    break;
                 if (s.trim().equalsIgnoreCase(pr))
-                    return true
+                    return true;
             }
-            return false*/
+            return false;*/
         }
     }
     //metodo che controlla se data inizio e data fine siano state inserite correttamente
@@ -91,7 +91,7 @@ public class VerificaInput {
         }
 
         //controlla che le data non siano di anni passati
-        if(gcInizio.get(Calendar.YEAR)<2020|| gcFine.get(Calendar.YEAR)<2020){
+        if(gcInizio.get(Calendar.YEAR)<2017|| gcFine.get(Calendar.YEAR)<2017){
             return false;
         }
         //controlla che la dataFine non sia precedente alla dataInizio

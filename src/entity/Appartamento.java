@@ -52,14 +52,6 @@ public class Appartamento extends Locazione {
 	public void setNumeroBagni(String numeroBagni) {
 		this.numeroBagni = numeroBagni;
 	}
-	
-	public String getNumeroLetti() {
-		return numeroLetti;
-	}
-
-	public void setNumeroLetti(String numeroLetti) {
-		this.numeroLetti = numeroLetti;
-	}
 
 	public boolean isGiardino() {
 		return giardino;
@@ -69,7 +61,13 @@ public class Appartamento extends Locazione {
 		this.giardino = giardino;
 	}
 
-	
+	public String getNumeroLetti() {
+		return numeroLetti;
+	}
+
+	public void setNumeroLetti(String numeroLetti) {
+		this.numeroLetti = numeroLetti;
+	}
 
 	
 	

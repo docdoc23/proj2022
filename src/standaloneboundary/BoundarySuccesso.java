@@ -63,8 +63,8 @@ public class BoundarySuccesso {
         titolo.setFont(new Font("Verdana", Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(SwingConstants.CENTER);
-        titolo.setVerticalAlignment(SwingConstants.CENTER);
+        titolo.setHorizontalAlignment(JLabel.CENTER);
+        titolo.setVerticalAlignment(JLabel.CENTER);
         titolo.setText(bundle.getString("boundarySuccesso_op"));
         
         pannelloSuccesso.add(panelTitolo);	

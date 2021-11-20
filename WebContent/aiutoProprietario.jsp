@@ -1,7 +1,11 @@
 <%@ page import="boundary.BoundaryAiuto" %>
 <%@ page import="exception.DeserializzazioneException" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.ArrayList" %><%--
+  Created by IntelliJ IDEA.
+  User: maria
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
 <html>
@@ -20,7 +24,7 @@
     </script>
 
 </head>
-<style>@import url('C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css');
+<style>@import url('../css/style.css');
 .bf{
     font-family: 'Lato', sans-serif;
     font-weight:300;

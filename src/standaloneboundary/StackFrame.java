@@ -8,12 +8,12 @@ public class StackFrame extends JFrame implements Serializable
 {	
 	private static final long serialVersionUID	= 1L;
 	//Variabili di classe
-	protected static Stack <StackFrame> pilaCornici;
+	public static Stack <StackFrame> pilaCornici;
 	
 	public StackFrame()
 	{
 		super();
-		pilaCornici = new Stack<>();
+		pilaCornici =new Stack<StackFrame>();
 	}
 	
 	public static void rimuoviDalTop(StackFrame c) 

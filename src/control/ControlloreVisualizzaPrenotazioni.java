@@ -37,17 +37,16 @@ public class ControlloreVisualizzaPrenotazioni {
         Thread t4 = new Thread(tCasa);
         Thread t5 = new Thread(tOst);
 
-        
+        t1.start();
+        t2.start();
         t3.start();
         t4.start();
         t5.start();
-        t1.start();
-        t2.start();
 
+        t1.join();
         t2.join();
         t3.join();
         t4.join();
-        t1.join();
         t5.join();
 
         prenotazioneTotali.addAll(ThreadVisualizzaPrenotazioniViaggiatore.getPrenotazioni());
