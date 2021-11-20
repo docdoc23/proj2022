@@ -1,4 +1,4 @@
-package decoratorTest;
+package decoratortest;
 
 import control.ControlloreVisualizzaPrezzo;
 import entity.Beb;
@@ -33,6 +33,7 @@ public class DecoratorTestBeB {
 
     }
 
+    
     @Test
     public void testNoServizi(){
 
@@ -41,7 +42,7 @@ public class DecoratorTestBeB {
         Assert.assertEquals(80,totale);
 
     }
-
+    
     @Test
     public void testTuttiServizi(){
 
@@ -50,6 +51,7 @@ public class DecoratorTestBeB {
         Assert.assertEquals(176,totale);
 
     }
+
 
     @Test
     public void testPet(){

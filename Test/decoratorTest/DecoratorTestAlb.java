@@ -1,4 +1,4 @@
-package decoratorTest;
+package decoratortest;
 
 import control.ControlloreVisualizzaPrezzo;
 import entity.Albergo;
@@ -25,19 +25,21 @@ public class DecoratorTestAlb {
         cvp.applicaPrezzoBase(locazione, numeroGiorni, "mezza pensione");
     }
 
-    @Test
-    public void testBase(){
-
-        int totale=cvp.ritornaPrezzoBase();
-        Assert.assertEquals(150,totale);
-
-    }
+    
 
     @Test
     public void testNoServizi(){
 
         cvp.applicaServizi(numeroGiorni,false,false,false);
         int totale=cvp.ritornaPrezzoConServizi();
+        Assert.assertEquals(150,totale);
+
+    }
+    
+    @Test
+    public void testBase(){
+
+        int totale=cvp.ritornaPrezzoBase();
         Assert.assertEquals(150,totale);
 
     }

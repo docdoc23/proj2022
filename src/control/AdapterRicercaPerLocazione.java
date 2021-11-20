@@ -10,13 +10,8 @@ import java.util.List;
 
 
 public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazione {
-	//modifica in case prima "Albergo" adesso creato costante EntAlbergo e usato lei
-	private static String EntAlbergo = "Albergo";
-	private static String EntAppartamento = "Appartamento";
-	private static String EntCasaVacanza = "CasaVacanza";
-	private static String EntOstello = "Ostello";
-
-
+	
+	
     //aggregazione
     private ControlloreRicercaGlobale crg;
 
@@ -41,7 +36,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
         
 
         switch (tipoLocazione) {
-            case "EntAlbergo":
+            case "Albergo":
                 ArrayList<Albergo> alberghiDisponibili = new ArrayList<>(); //Qui verranno inseriti gli alberghi da restituire all'getUtente
 
 
@@ -74,7 +69,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
                     }
                 }
                 return bebDisponibili;
-            case "EntCasaVacanza":
+            case "CasaVacanza":
             	ArrayList<CasaVacanza> casaVacanzeDisponibili = new ArrayList<>(); //Qui verranno inseriti gli appartamenti da restituire all'getUtente
 
 
@@ -85,7 +80,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
                     }
                 }
                 return casaVacanzeDisponibili;
-            case "EntOstello":
+            case "Ostello":
             	ArrayList<Ostello> ostelliDisponibili = new ArrayList<>(); //Qui verranno inseriti gli ostelli da restituire all'getUtente
 
 
@@ -125,7 +120,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
         }
 
         switch (tipoLocazione) {
-            case "EntAlbergo":
+            case "Albergo":
             	ArrayList<Albergo> elencoAlberghi = (ArrayList<Albergo>) ricerca("Albergo", provincia, prezzo, numeroGiorni);
             	ArrayList<Albergo> alberghiDisponibili = new ArrayList<>(); //Qui verranno inseriti gli alberghi da restituire all'getUtente
 
@@ -139,7 +134,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
                 }
                 return alberghiDisponibili;
 
-            case "EntAppartamento":
+            case "Appartamento":
             	ArrayList<Appartamento> elencoAppartamenti = (ArrayList<Appartamento>) ricerca("Appartamento", provincia, prezzo, numeroGiorni);
             	ArrayList<Appartamento> appartamentiDisponibili = new ArrayList<>(); //Qui verranno inseriti gli appartamenti da restituire all'getUtente
 
@@ -166,7 +161,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
                     }
                 }
                 return bebDisponibili;
-            case "EntCasaVacanza":
+            case "CasaVacanza":
             	ArrayList<CasaVacanza> elencoCasaVacanze = (ArrayList<CasaVacanza>) ricerca("CasaVacanza", provincia, prezzo, numeroGiorni);
             	ArrayList<CasaVacanza> casaVacanzeDisponibili = new ArrayList<>(); //Qui verranno inseriti gli appartamenti da restituire all'getUtente
 
@@ -181,7 +176,7 @@ public class AdapterRicercaPerLocazione implements ControlloreRicercaPerLocazion
                 }
                 return casaVacanzeDisponibili;
 
-            case "EntOstello":
+            case "Ostello":
 
             	ArrayList<Ostello> elencoOstelli = (ArrayList<Ostello>) ricerca("Ostello", provincia, prezzo, numeroGiorni);
             	ArrayList<Ostello> ostelliDisponibili = new ArrayList<>(); //Qui verranno inseriti gli ostelli da restituire all'Utente
