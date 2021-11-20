@@ -75,8 +75,8 @@ public class BoundaryAvvio extends StackFrame
         titolo.setFont(new Font("Verdana", 0, 20));
         titolo.setLocation(BORDO, BORDO);
         titolo.setSize(panelTitolo.getWidth(), 30);
-        titolo.setHorizontalAlignment(JLabel.CENTER);
-        titolo.setVerticalAlignment(JLabel.CENTER);
+        titolo.setHorizontalAlignment(SwingConstants.CENTER);
+        titolo.setVerticalAlignment(SwingConstants.CENTER);
         titolo.setText(bundle.getString("boundaryAvvio_pannello"));
 
         panelButtons.setLayout(null);

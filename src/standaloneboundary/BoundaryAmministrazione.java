@@ -59,8 +59,8 @@ public class BoundaryAmministrazione {
         titolo.setFont(new Font("Verdana", Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(JLabel.CENTER);
-        titolo.setVerticalAlignment(JLabel.CENTER);
+        titolo.setHorizontalAlignment(SwingConstants.CENTER);
+        titolo.setVerticalAlignment(SwingConstants.CENTER);
         titolo.setText(bundle.getString("boundaryAmministrazione_benvenuto"));
         
         pannelloAmministrazione.add(panelTitolo);	

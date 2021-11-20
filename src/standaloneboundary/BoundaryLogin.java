@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
 import java.util.ResourceBundle;
 
 public class BoundaryLogin extends JFrame
@@ -30,14 +31,14 @@ public class BoundaryLogin extends JFrame
     private BoxSelectItem ascoltatoreBox;
 
     //Bottone
-    public JButton bLogin;
+    private JButton bLogin;
 
 
     // Campi e loro etichette
-    public JLabel     loginLabel = new JLabel();
-    public JTextField loginF = new JTextField();
-    public JLabel     passwordLabel = new JLabel();
-    public JPasswordField passwordF= new JPasswordField();
+    private JLabel     loginLabel = new JLabel();
+    private JTextField loginF = new JTextField();
+    private JLabel     passwordLabel = new JLabel();
+    private JPasswordField passwordF= new JPasswordField();
 
     private JComboBox<String> box;
 
@@ -75,8 +76,8 @@ public class BoundaryLogin extends JFrame
         titolo.setFont(new Font(font, Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(JLabel.CENTER);
-        titolo.setVerticalAlignment(JLabel.CENTER);
+        titolo.setHorizontalAlignment(SwingConstants.CENTER);
+        titolo.setVerticalAlignment(SwingConstants.CENTER);
         titolo.setText(bundle.getString("boundaryLogin_credenziali"));
 
         // Composizione box selettore lingua
@@ -202,12 +203,14 @@ public class BoundaryLogin extends JFrame
                 pannelloLogin.setVisible(false);
 
                 try {
-                    this.aClass
-                            .newInstance();
+                	//modifica newinstance piu eccezione multipli catch automatici
+                	this.aClass.getDeclaredConstructor().newInstance();
+                    //this.aClass.newInstance();
                 } catch (IllegalAccessException |
-                        InstantiationException ex) {
+                        InstantiationException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException ex) {
                     ex.printStackTrace();
-                }
+                
+				}
             }
         }
     }

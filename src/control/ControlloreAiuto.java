@@ -97,7 +97,7 @@ public class ControlloreAiuto {
         SerializzaOggetti sobj = new SerializzaOggetti();
 
         if(file.length()==0){
-            return;
+        	
         }
         else {
             domArray = (ArrayList<DomandaUtente>) dobj.deserializza(percorso);

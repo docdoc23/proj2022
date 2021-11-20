@@ -42,7 +42,7 @@ public interface Constants {
     String IT = "it";
     String EN = "en";
     // Array contenente tutte le lingue disponibili del sistema
-    String LANGS[] = {IT, EN};
+    String[] LANGS = {IT, EN};
 
     String LANG_DEFAULT = IT;
 

@@ -36,7 +36,7 @@ public class BoundaryCreaAmministratore {
 
 	// Ascoltatore di bottone e relativa azioni
 	private CreaAA ascoltatoreEtAzioneCrea;
-	private tornaIndietroAa ascoltatoreEtAzioneIndietro;
+	private tornaindietroAa ascoltatoreEtAzioneIndietro;
 	private ControlloreLinguaAmministratore cl;
 
 
@@ -63,8 +63,8 @@ public class BoundaryCreaAmministratore {
 		titolo.setFont(new Font(font, Font.BOLD, 20));
 		titolo.setLocation(border, border);
 		titolo.setSize(panelTitolo.getWidth(), 35);
-		titolo.setHorizontalAlignment(JLabel.CENTER);
-		titolo.setVerticalAlignment(JLabel.CENTER);
+		titolo.setHorizontalAlignment(SwingConstants.CENTER);
+		titolo.setVerticalAlignment(SwingConstants.CENTER);
 		titolo.setText(bundle.getString("boundaryCreaAmministratore_completa_campi"));
 
 		pannelloCreazione.add(panelTitolo);
@@ -141,7 +141,7 @@ public class BoundaryCreaAmministratore {
 
 		// Ascoltatori dei bottoni e relativa azione
 		ascoltatoreEtAzioneCrea = new CreaAA();
-		ascoltatoreEtAzioneIndietro = new tornaIndietroAa();
+		ascoltatoreEtAzioneIndietro = new tornaindietroAa();
 
 
 		// Associazione di bottone a relativo ascoltatore
@@ -179,7 +179,7 @@ public class BoundaryCreaAmministratore {
 		}
 	}
 
-	private class tornaIndietroAa implements ActionListener
+	private class tornaindietroAa implements ActionListener
 	{
 		public void actionPerformed(ActionEvent arg0)
 		{

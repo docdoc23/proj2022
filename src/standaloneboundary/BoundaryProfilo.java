@@ -127,8 +127,8 @@ public class BoundaryProfilo {
         this.titolo.setFont(new Font(font, Font.BOLD, 20));
         this.titolo.setLocation(border, border);
         this.titolo.setSize(panelTitolo.getWidth(), 35);
-        this.titolo.setHorizontalAlignment(JLabel.CENTER);
-        this.titolo.setVerticalAlignment(JLabel.CENTER);
+        this.titolo.setHorizontalAlignment(SwingConstants.CENTER);
+        this.titolo.setVerticalAlignment(SwingConstants.CENTER);
         this.titolo.setText(bundle.getString("boundaryProfilo_modifica_dati"));
 
         // Composizione pannello username
@@ -318,10 +318,11 @@ public class BoundaryProfilo {
                 pannelloWrapper.setVisible(false);
 
                 try {
-                    this.aClass
-                            .newInstance();
+                	this.aClass.getDeclaredConstructor().newInstance();
+                    /*this.aClass
+                            .newInstance();*/
                 } catch (IllegalAccessException |
-                        InstantiationException ex) {
+                        InstantiationException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException ex) {
                     ex.printStackTrace();
                 }
             }

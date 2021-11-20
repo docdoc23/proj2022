@@ -26,6 +26,14 @@ public class CamerePrenotate implements Serializable {
     public void setNomeLocazione(String nomeLocazione) {
         this.nomeLocazione = nomeLocazione;
     }
+    
+    public int getContatore() {
+        return contatore;
+    }
+
+    public void setContatore(int count) {
+        this.contatore = count;
+    }
 
     public GregorianCalendar getData() {
         return data;
@@ -35,11 +43,5 @@ public class CamerePrenotate implements Serializable {
         this.data = date;
     }
 
-    public int getContatore() {
-        return contatore;
-    }
-
-    public void setContatore(int count) {
-        this.contatore = count;
-    }
+    
 }

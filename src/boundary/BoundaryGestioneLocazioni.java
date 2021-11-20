@@ -39,6 +39,15 @@ public class BoundaryGestioneLocazioni {
         this.postiTotali = postiTotali;
     }
 
+    
+    public String getIndirizzo() {
+        return indirizzo;
+    }
+
+    public void setIndirizzo(String indirizzo) {
+        this.indirizzo = indirizzo;
+    }
+    
     public String getProvincia() {
         return provincia;
     }
@@ -46,13 +55,13 @@ public class BoundaryGestioneLocazioni {
     public void setProvincia(String provincia) {
         this.provincia = provincia;
     }
-
-    public String getIndirizzo() {
-        return indirizzo;
+    
+    public String getPrezzo() {
+        return prezzo;
     }
 
-    public void setIndirizzo(String indirizzo) {
-        this.indirizzo = indirizzo;
+    public void setPrezzo(String prezzo) {
+        this.prezzo = prezzo;
     }
 
     public String getUserLocatore() {
@@ -63,14 +72,7 @@ public class BoundaryGestioneLocazioni {
         this.userLocatore = userLocatore;
     }
 
-    public String getPrezzo() {
-        return prezzo;
-    }
-
-    public void setPrezzo(String prezzo) {
-        this.prezzo = prezzo;
-    }
-
+    
     public String getDescrizione() {
         return descrizione;
     }
@@ -79,20 +81,21 @@ public class BoundaryGestioneLocazioni {
         this.descrizione = descrizione;
     }
 
-    public String getParcheggio() {
-        return parcheggio;
-    }
-
-    public void setParcheggio(String parcheggio) {
-        this.parcheggio = parcheggio;
-    }
-
+    
     public String getWifi() {
         return wifi;
     }
 
     public void setWifi(String wifi) {
         this.wifi = wifi;
+    }
+    
+    public String getParcheggio() {
+        return parcheggio;
+    }
+
+    public void setParcheggio(String parcheggio) {
+        this.parcheggio = parcheggio;
     }
 
     public String getPet() {
@@ -129,36 +132,36 @@ public class BoundaryGestioneLocazioni {
     }
 
     public boolean verificaInserimento(Locazione locazione) throws SerializzazioneException, DeserializzazioneException {
-        if (locazione.getNomeLocazione()==null||locazione.getNomeLocazione().equals("") ||locazione.getPostiTotali()==null || locazione.getPostiTotali().equals("") || locazione.getProvincia()==null || locazione.getProvincia().equals("") || locazione.getIndirizzo()==null || locazione.getIndirizzo().equals("") || locazione.getUserLocatore()==null || locazione.getUserLocatore().equals("") || locazione.getPrezzo()==null || locazione.getPrezzo().equals("") ||
-                locazione.getDescrizione()==null || locazione.getDescrizione().equals("")) {
+        if (locazione.getNomeLocazione().equals("") || locazione.getPostiTotali().equals("") ||  locazione.getProvincia().equals("") ||  locazione.getIndirizzo().equals("")  || locazione.getUserLocatore().equals("") ||  locazione.getPrezzo().equals("") ||
+                locazione.getDescrizione().equals("")) {
             return false;
         }
         if(locazione.getClass()== Albergo.class){
             Albergo albergo=(Albergo)locazione;
-            if(albergo.getTipoPensione()==null || albergo.getTipoPensione().equals("")|| albergo.getOrarioColazione()==null || albergo.getOrarioColazione().equals("")|| albergo.getOrarioPranzo()==null || albergo.getOrarioPranzo().equals("") || albergo.getOrarioCena()==null || albergo.getOrarioCena().equals(""))
+            if(albergo.getTipoPensione().equals("")|| albergo.getOrarioColazione().equals("")||  albergo.getOrarioPranzo().equals("") ||  albergo.getOrarioCena().equals(""))
                 return false;
         }
         else if(locazione.getClass()== Appartamento.class){
             Appartamento appartamento=(Appartamento) locazione;
-            if(appartamento.getNumeroLetti()==null || appartamento.getNumeroLetti().equals("")|| appartamento.getNumeroStanze()==null || appartamento.getNumeroStanze().equals("")|| appartamento.getNumeroBagni()==null || appartamento.getNumeroBagni().equals(""))
+            if(appartamento.getNumeroLetti().equals("")||  appartamento.getNumeroStanze().equals("")||  appartamento.getNumeroBagni().equals(""))
                 return false;
 
         }
         else if(locazione.getClass()== Beb.class){
             Beb beb=(Beb) locazione;
-            if(beb.getOrarioColazione()==null || beb.getOrarioColazione().equals(""))
+            if(beb.getOrarioColazione().equals(""))
                 return false;
 
         }
         else if(locazione.getClass()== CasaVacanza.class){
             CasaVacanza casa=(CasaVacanza) locazione;
-            if(casa.getNumeroLetti()==null || casa.getNumeroLetti().equals("")|| casa.getNumeroCamere()==null || casa.getNumeroCamere().equals("")|| casa.getNumeroBagni()==null || casa.getNumeroBagni().equals(""))
+            if(casa.getNumeroLetti().equals("")|| casa.getNumeroCamere().equals("")||  casa.getNumeroBagni().equals(""))
                 return false;
 
         }
         else if(locazione.getClass()== Ostello.class){
             Ostello ostello=(Ostello)locazione;
-            if(ostello.getTipoPensione()==null || ostello.getTipoPensione().equals(""))
+            if(ostello.getTipoPensione().equals(""))
                 return false;
 
         }

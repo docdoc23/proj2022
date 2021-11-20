@@ -17,17 +17,17 @@ import java.util.List;
 public class ControlloreRimuoviPrenotazione {
 
     private static String percorsoPrenotatiAlbergo = Constants.PRENOTATI_ALBERGO_PATH;
-    private static String percorsoPrenotatiAppartamento = Constants.PRENOTATI_APPARTAMENTO_PATH;
-    private static String percorsoPrenotatiBeb = Constants.PRENOTATI_BEB_PATH;
     private static String percorsoPrenotatiCasaVacanza = Constants.PRENOTATI_CASEVACANZA_PATH;
+    private static String percorsoPrenotatiBeb = Constants.PRENOTATI_BEB_PATH;
+    private static String percorsoPrenotatiAppartamento = Constants.PRENOTATI_APPARTAMENTO_PATH;
     private static String percorsoPrenotatiOstello = Constants.PRENOTATI_OSTELLO_PATH;
 
-    private static String percorsoPrenotazioniAlberghi = Constants.PRENOTAZIONE_ALBERGO_PATH;
+    private static String percorsoPrenotazioniCaseVacanza = Constants.PRENOTAZIONE_CASAVACANZA_PATH;
     private static String percorsoPrenotazioniBeb = Constants.PRENOTAZIONE_BEB_PATH;
+    private static String percorsoPrenotazioniAlberghi = Constants.PRENOTAZIONE_ALBERGO_PATH;
     private static String percorsoPrenotazioniOstelli = Constants.PRENOTAZIONE_OSTELLO_PATH;
     private static String percorsoPrenotazioniAppartamenti = Constants.PRENOTAZIONE_APPARTAMENTO_PATH;
-    private static String percorsoPrenotazioniCaseVacanza = Constants.PRENOTAZIONE_CASAVACANZA_PATH;
-
+    
 
     /*
      metodo che rimuove una prenotazione, per farlo oltre ad eliminare un oggetto prenotazione deve

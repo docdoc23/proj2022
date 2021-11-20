@@ -27,8 +27,8 @@ public class BoundaryRimuoviDatiUtente {
     //Area di testo
     JTextArea utentilista = new JTextArea();
     JScrollPane listascroll = new JScrollPane(utentilista,
-            JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
-            JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+            ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
+            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
 
     //Bottone
@@ -44,7 +44,7 @@ public class BoundaryRimuoviDatiUtente {
     // Ascoltatore di bottone e relative azioni
     private RimuoviDatiAA ascoltatoreEtAzioneRimuoviDati;
     private VisualizzaAA ascoltatoreEtAzioneVisualizza;
-    private tornaindietroAa ascoltatoreEtAzioneIndietro;
+    private TornaindietroAa ascoltatoreEtAzioneIndietro;
 
     private ControlloreLinguaAmministratore cl;
 
@@ -81,8 +81,8 @@ public class BoundaryRimuoviDatiUtente {
         titolo.setFont(new Font(fontv, Font.BOLD, 20));
         titolo.setLocation(border, border);
         titolo.setSize(panelTitolo.getWidth(), 35);
-        titolo.setHorizontalAlignment(JLabel.CENTER);
-        titolo.setVerticalAlignment(JLabel.CENTER);
+        titolo.setHorizontalAlignment(SwingConstants.CENTER);
+        titolo.setVerticalAlignment(SwingConstants.CENTER);
         titolo.setText(bundle.getString("boundaryRimuoviDati_utente_da_rimuovere"));
 
         pannelloRimuoviDati.add(panelTitolo);
@@ -148,7 +148,7 @@ public class BoundaryRimuoviDatiUtente {
         // Ascoltatore di bottone e relativa azione
         ascoltatoreEtAzioneVisualizza = new VisualizzaAA();
         ascoltatoreEtAzioneRimuoviDati = new RimuoviDatiAA();
-        ascoltatoreEtAzioneIndietro = new tornaindietroAa();
+        ascoltatoreEtAzioneIndietro = new TornaindietroAa();
 
 
 
@@ -196,7 +196,7 @@ public class BoundaryRimuoviDatiUtente {
     }
 
 
-    private class tornaindietroAa implements ActionListener
+    private class TornaindietroAa implements ActionListener
     {
         public void actionPerformed(ActionEvent arg0)
         {

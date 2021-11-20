@@ -18,8 +18,9 @@ public class ThreadVisualizzaPrenotazioniProprietario implements Runnable {
     private static ReentrantLock l = new ReentrantLock();
 
     public ThreadVisualizzaPrenotazioniProprietario( String proprietario, String percorso){
+        
+        this.percorso=percorso;
         this.proprietario=proprietario;
-        this.percorso=  percorso;
 
     }
 
