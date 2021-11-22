@@ -11,9 +11,9 @@ public class DecoratorTestBeB {
 	
 	private static int numeroGiorni=4;
 
-    //parcheggio price= 8/gg;
-    //wifi price= 4/gg;
-    //pet price= 12/gg;
+    //parcheggio price= 8/gg
+    //wifi price= 4/gg
+    //pet price= 12/gg
 
     private ControlloreVisualizzaPrezzo cvp = new ControlloreVisualizzaPrezzo();
 

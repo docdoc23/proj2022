@@ -11,9 +11,9 @@ public class DecoratorTestAlb {
 	
 	private static int numeroGiorni=3;
 
-    //parcheggio price= 8/gg;
-    //wifi price= 4/gg;
-    //pet price= 12/gg;
+    //parcheggio price= 8/gg
+    //wifi price= 4/gg
+    //pet price= 12/gg
 
     private ControlloreVisualizzaPrezzo cvp = new ControlloreVisualizzaPrezzo();
 
@@ -72,3 +72,4 @@ public class DecoratorTestAlb {
 
     }
 }
+
