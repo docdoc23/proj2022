@@ -104,10 +104,10 @@
     <div id="page-bgtop">
         <div id="page-bgbtm">
             <!-- end #content -->
-            <table > <!-- width="100%" border="0" -->
-                <tr ><!-- valign="top" -->
+            <table > 
+                <tr >
 
-                    <td  id="login"><!-- align="center" -->
+                    <td  id="login">
 
                         <%
                             String paramLog = request.getParameter("errLog");
@@ -144,7 +144,7 @@
                         </form>
                     </td>
 
-                    <td ><!-- align="center" -->
+                    <td >
 
                         <%
                             String paramReg = request.getParameter("Reg");
