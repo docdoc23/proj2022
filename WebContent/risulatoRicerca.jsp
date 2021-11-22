@@ -124,7 +124,7 @@ Object elencoLocazioni = new Object();
 	<!-- end #header -->
 	<div id="page">
 		<div id="page-bgtop">
-			<ul class="topnav" id=myTopnav">
+			<ul class="topnav" id="myTopnav">
 				<li><a href="utente.jsp">HOME</a></li>
 				<li><a href="areaViaggiatore.jsp">Area Viaggiatore</a></li>
 				<li><a href="areaProprietario.jsp">Area Proprietario</a></li>
