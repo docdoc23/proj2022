@@ -1,9 +1,12 @@
 package constants;
 
+//import java.nio.file.Path;
+//import java.nio.file.Paths;
 
 public interface Constants {
     //***** Percorsi utili *****//
     String ABS_PATH = "C:\\Users\\stefa\\eclipse-workspace\\MyPlaces\\"; /* NON MODIFICARE */
+    
     String ALBERGHI_PATH =    ABS_PATH.concat("data\\location\\alberghi");
     String ADMIN_PATH =       ABS_PATH.concat("data\\amministratori");
     String APPART_PATH =      ABS_PATH.concat("data\\location\\appartamenti");
