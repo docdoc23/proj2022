@@ -33,14 +33,16 @@ public class ControlloreRegistraPrenotazioniPiuPosti implements ControlloreRegis
         File file =  new File(percorso);
         if(file.length()==0){
             Prenotazione clientePrenotazione = new Prenotazione(nomeLocazione,proprietario,cliente,dataInizio,dataFine,tipo,prezzo,numeroPersone);
-            listaPrenotazione.add(clientePrenotazione);
             sobj.serializza(listaPrenotazione,percorso);
+            listaPrenotazione.add(clientePrenotazione);
+            
 
         }else{
 
             DeserializzaOggetti dobj = new DeserializzaOggetti();
-            listaPrenotazione = (ArrayList<Prenotazione>) dobj.deserializza(percorso);
             int precedenteRegistrazione=0;
+            listaPrenotazione = (ArrayList<Prenotazione>) dobj.deserializza(percorso);
+            
 
             for(Prenotazione prenotazione : listaPrenotazione){
                 if(prenotazione.getNomeLocazione().equals(nomeLocazione)&& prenotazione.getCliente().equals(cliente)&&
@@ -50,9 +52,10 @@ public class ControlloreRegistraPrenotazioniPiuPosti implements ControlloreRegis
             }
             if(precedenteRegistrazione==0) {
                 Prenotazione clientePrenotazione = new Prenotazione(nomeLocazione, proprietario, cliente, dataInizio, dataFine,tipo,prezzo,numeroPersone);
+                
+                sobj.serializza(listaPrenotazione, percorso);
                 clientePrenotazione.setTipo(tipo);
                 listaPrenotazione.add(clientePrenotazione);
-                sobj.serializza(listaPrenotazione, percorso);
             }
         }
     }

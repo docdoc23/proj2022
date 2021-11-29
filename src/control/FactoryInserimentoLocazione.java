@@ -31,15 +31,17 @@ public class FactoryInserimentoLocazione {
     public void changeSettings(String nomeLocazione,String postiTotali,String provincia, String indirizzo, String userLocatore, String prezzo,
                                String descrizione, boolean parcheggio, boolean wifi, boolean pet) {
         this.nomeLocazione = nomeLocazione;
-        this.postiTotali=postiTotali;
+        
         this.provincia= provincia;
+       
+        this.descrizione = descrizione;
+        this.postiTotali=postiTotali;
+        this.wifi = wifi;
+        this.pet = pet;
+        this.parcheggio = parcheggio;
         this.indirizzo = indirizzo;
         this.userLocatore = userLocatore;
         this.prezzo = prezzo;
-        this.descrizione = descrizione;
-        this.parcheggio = parcheggio;
-        this.wifi = wifi;
-        this.pet = pet;
     }
 
 

@@ -12,8 +12,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/functions.js"></script>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="../js/functions.js" ></script>
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://127.0.0.1:8887/js/functions.js" ></script>
 </head>
 
 <body>
@@ -70,7 +70,7 @@
 	<div>
 		<div style="float: left; width: 400px" >
 			<h3>Albergo</h3>
-			<input id = albergo type="radio" style="display: none" name="command" value="0" onclick="visualizza('albform','aptform','bebform','cvzform','ostform')"/>
+			<input id = "albergo" type="radio" style="display: none" name="command" value="0" onclick="visualizza('albform','aptform','bebform','cvzform','ostform')"/>
 			<label class="drinkcard-cc albergo" for="albergo"></label>
 		</div>
 		<form method="get" action="riceviLocazione.jsp" enctype="text/plain" id="albform" style="display:none">

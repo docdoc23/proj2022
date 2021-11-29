@@ -10,7 +10,7 @@
     <title>Perfect Places</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
@@ -65,8 +65,8 @@
                                 <td><h1>Proprietario</h1></td>
                             </tr>
                             <tr>
-                                <td style="padding-right: 100px"><h2 class="title"><a href="aiutoViaggiatore.jsp"><img src="../css/images/valigia.jpg" width="200" height="200" alt="domandaUtente cliente"/></a></h2></td>
-                                <td style="margin-left: 50px"><h2 class="title"><a href="aiutoProprietario.jsp"><img src="../css/images/proprietario.png" width="200" height="200" alt="domandaUtente proprietario"/></a></h2></td>
+                                <td style="padding-right: 100px"><h2 class="title"><a href="aiutoViaggiatore.jsp"><img src="http://127.0.0.1:8887/css/images/valigia.jpg" width="200" height="200" alt="domandaUtente cliente"/></a></h2></td>
+                                <td style="margin-left: 50px"><h2 class="title"><a href="aiutoProprietario.jsp"><img src="http://127.0.0.1:8887/css/images/proprietario.png" width="200" height="200" alt="domandaUtente proprietario"/></a></h2></td>
                             </tr>
 
 

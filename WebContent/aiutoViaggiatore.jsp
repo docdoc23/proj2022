@@ -20,7 +20,7 @@
     </script>
 
 </head>
-<style>@import url('C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css/style.css');
+<style>@import url('http://127.0.0.1:8887/css/style.css');
 .bf{
     font-family: 'Lato', sans-serif;
     font-weight:300;

@@ -59,7 +59,7 @@ public class ControlloreRispondiDomande {
         DeserializzaOggetti dobj = new DeserializzaOggetti();
         ArrayList<String> domande = new ArrayList<String>();
 
-        String dom[];
+        String[] dom;
 
         dom=null;
         File file = new File(path);

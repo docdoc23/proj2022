@@ -10,7 +10,7 @@
 <title>Perfect Places</title>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
 <jsp:useBean id="b" scope="request" class="boundary.BoundaryGestioneLocazioni"/>
@@ -59,7 +59,7 @@ String descrizione;
 	<!-- end #header -->
 	<div id="page">
 		<div id="page-bgtop">
-			<ul class="topnav" id=myTopnav">
+			<ul class="topnav" id="myTopnav">
 				<li><a href="utente.jsp">HOME</a></li>
 				<li><a href="areaViaggiatore.jsp">Area Viaggiatore</a></li>
 				<li><a href="areaProprietario.jsp">Area Proprietario</a></li>
@@ -101,33 +101,33 @@ String descrizione;
 						<%
 							if(locazione.getClass()== Albergo.class){
 						%>
-						<img src="../css/images/albergo.png"  style="width:50px;height:50px; float: left">
+						<img src="http://127.0.0.1:8887/css/images/albergo.png"  style="width:50px;height:50px; float: left"/>
 						<span class="span">Nome albergo: <%out.println(nomeLocazione);%></span>
 						<%}%>
 						<%
 							if(locazione.getClass()== Appartamento.class){
 						%>
-						<img src="../css/images/appartamento.png"  style="width:50px;height:50px;float: left">
+						<img src="http://127.0.0.1:8887/css/images/appartamento.png"  style="width:50px;height:50px;float: left"/>
 						<span class="span">Nome appartamento: <%out.println(nomeLocazione);%></span>
 						<%}%>
 						<%
 							if(locazione.getClass()== Beb.class){
 						%>
-						<img src="../css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
+						<img src="http://127.0.0.1:8887/css/images/beb.jpeg"  style="width:50px;height:50px;float: left;"/>
 						<span class="span">Nome b&b: <%out.println(nomeLocazione);%></span>
 
 						<%}%>
 						<%
 							if(locazione.getClass()== CasaVacanza.class){
 						%>
-						<img src="../css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
+						<img src="http://127.0.0.1:8887/css/images/casaVacanza.png"  style="width:50px;height:50px;float: left"/>
 						<span class="span">Nome casa vacanza: <%out.println(nomeLocazione);%></span>
 
 						<%}%>
 						<%
 							if(locazione.getClass()==Ostello.class){
 						%>
-						<img src="../css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
+						<img src="http://127.0.0.1:8887/css/images/ostello.jpeg"  style="width:50px;height:50px;float: left"/>
 						<span class="span">Nome ostello: <%out.println(nomeLocazione);%></span>
 						<%}%>
 

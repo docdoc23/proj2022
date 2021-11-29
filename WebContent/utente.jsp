@@ -19,8 +19,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/functions.js"></script>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="../js/functions.js"></script>
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://127.0.0.1:8887/js/functions.js"></script>
 </head>
 
 <body>
@@ -88,7 +88,7 @@
 	<div id="page">
 		<div id="page-bgtop">
             <!-- Menu -->
-            <ul class="topnav" id=myTopnav">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="utente.jsp"><%=bundle.getString("utente_home")%></a></li>
                 <li><a href="areaViaggiatore.jsp"><%=bundle.getString("utente_areaViaggiatore")%></a></li>
                 <li><a href="areaProprietario.jsp"><%=bundle.getString("utente_areaProprietario")%></a></li>
@@ -151,7 +151,7 @@
 
 					<div class="post">
 						<h2 class="title"><%=bundle.getString("utente_cliccaImg")%></h2>
-                        <br><br><br>
+                        
 						<table style="width: 100%" >
 
 						<tr>
@@ -163,22 +163,22 @@
 							<tr>
 								<td>
                                     <a href="areaViaggiatore.jsp">
-                                        <img  class="imgInizio" src="C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css/images/iconaMenuViaggiatore.png"  width="200" height="200" alt="area viaggiatore"/>
+                                        <img  class="imgInizio" src="http://127.0.0.1:8887/css/images/iconaMenuViaggiatore.png"  width="200" height="200" alt="area viaggiatore"/>
                                     </a>
                                 </td>
                                 <td style="padding-left: 50px">
                                     <a href="areaProprietario.jsp">
-                                        <img class="imgInizio" src="C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css/images/iconaMenuProprietario.png"  width="200" height="200" alt="area proprietario"/>
+                                        <img class="imgInizio" src="http://127.0.0.1:8887/css/images/iconaMenuProprietario.png"  width="200" height="200" alt="area proprietario"/>
                                     </a>
                                 </td>
                                 <td style="padding-left: 50px">
                                     <a href="profiloUtente.jsp">
-                                        <img class="imgInizio" src="C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css/images/iconaMenuProfilo.png"  width="180" height="180" alt="profilo utente"/>
+                                        <img class="imgInizio" src="http://127.0.0.1:8887/css/images/iconaMenuProfilo.png"  width="180" height="180" alt="profilo utente"/>
                                     </a>
                                 </td>
                                 <td style="padding-left: 50px">
                                     <a href="posta.jsp">
-                                        <img class="imgInizio" src="C:/Users/stefa/eclipse-workspace/MyPlaces/WebContent/css/images/iconaMenuPosta.png"  width="230" height="230" alt="profilo utente"/>
+                                        <img class="imgInizio" src="http://127.0.0.1:8887/css/images/iconaMenuPosta.png"  width="230" height="230" alt="profilo utente"/>
                                     </a>
                                 </td>
 							</tr>

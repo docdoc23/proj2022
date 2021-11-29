@@ -11,7 +11,7 @@
     <title>Perfect Places</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
@@ -53,7 +53,7 @@
     <!-- end #header -->
     <div id="page">
         <div id="page-bgtop">
-            <ul class="topnav" id=myTopnav">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="utente.jsp">HOME</a></li>
                 <li><a href="areaViaggiatore.jsp">Area Viaggiatore</a></li>
                 <li><a href="areaProprietario.jsp">Area Proprietario</a></li>

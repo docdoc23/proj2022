@@ -10,8 +10,8 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/functions.js"></script>
-	<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-	<script type="text/javascript" src="../js/functions.js" ></script>
+	<link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://127.0.0.1:8887/js/functions.js" ></script>
 </head>
 <style>
 	input[type=text], select {
@@ -203,33 +203,33 @@ Object elencoLocazioni = new Object();
                         <%
                             if(elencoGlobale.get(i).getClass()==Albergo.class){
                         %>
-                        <img src="../css/images/albergo.png"  style="width:50px;height:50px; float: left">
+                        <img src="http://127.0.0.1:8887/css/images/albergo.png"  style="width:50px;height:50px; float: left">
                         <span class="span">Nome albergo: <%out.println(nomeLocazione);%></span>
 						<%}%>
                         <%
                             if(elencoGlobale.get(i).getClass()==Appartamento.class){
                         %>
-                        <img src="../css/images/appartamento.png"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/appartamento.png"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome appartamento: <%out.println(nomeLocazione);%></span>
                         <%}%>
                         <%
                             if(elencoGlobale.get(i).getClass()==Beb.class){
                         %>
-                        <img src="../css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
+                        <img src="http://127.0.0.1:8887/css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
                         <span class="span">Nome b&b: <%out.println(nomeLocazione);%></span>
 
                         <%}%>
                         <%
                             if(elencoGlobale.get(i).getClass()==CasaVacanza.class){
                         %>
-                        <img src="../css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome casa vacanza: <%out.println(nomeLocazione);%></span>
 
                         <%}%>
                         <%
                             if(elencoGlobale.get(i).getClass()==Ostello.class){
                         %>
-                        <img src="../css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome ostello: <%out.println(nomeLocazione);%></span>
                         <%}%>
 							<br><br><br>
@@ -304,10 +304,10 @@ Object elencoLocazioni = new Object();
                                             </td>
                                             <%}%>
 
-										 		<input type="hidden" name="id" value="<%out.println(i);%>">
-										 		<input type="hidden" name="dataInizio" value="<%out.println(dataInizio);%>">
-										 		<input type="hidden" name="dataFine" value="<%out.println(dataFine);%>">
-                                                <td style="float: right"><input type="submit" class="btnBlueborder" value="Info&Dettagli"></td>
+										 	<input type="hidden" name="id" value="<%out.println(i);%>">
+										 	<input type="hidden" name="dataInizio" value="<%out.println(dataInizio);%>">
+										 	<input type="hidden" name="dataFine" value="<%out.println(dataFine);%>">
+                                            <td style="float: right"><input type="submit" class="btnBlueborder" value="Info&Dettagli"></td>
 									 </tr>
 									</table>
 
@@ -406,7 +406,7 @@ Object elencoLocazioni = new Object();
 								%>
 								
 								<div class="post">
-                                    <img src="../css/images/albergo.png"  style="width:50px;height:50px; float: left">
+                                    <img src="http://127.0.0.1:8887/css/images/albergo.png"  style="width:50px;height:50px; float: left">
                                     <span class="span">Nome albergo: <%out.println(nomeLocazione);%></span>
 									<br><br><br>
 									<div>
@@ -577,7 +577,7 @@ Object elencoLocazioni = new Object();
 							%>
 							
 							<div class="post">
-                                <img src="../css/images/appartamento.png"  style="width:50px;height:50px;float: left">
+                                <img src="http://127.0.0.1:8887/css/images/appartamento.png"  style="width:50px;height:50px;float: left">
                                 <span class="span">Nome appartamento: <%out.println(nomeLocazione);%></span>
 								<br><br><br>
 								<div>
@@ -715,7 +715,7 @@ Object elencoLocazioni = new Object();
 							%>
 							
 							<div class="post">
-                                <img src="../css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
+                                <img src="http://127.0.0.1:8887/css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
                                 <span class="span">Nome b&b: <%out.println(nomeLocazione);%></span>
 								<br><br><br>
 								<div>
@@ -870,7 +870,7 @@ Object elencoLocazioni = new Object();
 						%>
 						
 						<div class="post">
-                            <img src="../css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
+                            <img src="http://127.0.0.1:8887/css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
                             <span class="span">Nome casa vacanza: <%out.println(nomeLocazione);%></span>
 							<br><br><br>
 							<div>
@@ -1007,7 +1007,7 @@ Object elencoLocazioni = new Object();
 						%>
 						
 						<div class="post">
-                            <img src="../css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
+                            <img src="http://127.0.0.1:8887/css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
                             <span class="span">Nome ostello: <%out.println(nomeLocazione);%></span>
 							<br><br><br>
 							<div>

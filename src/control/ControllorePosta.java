@@ -213,7 +213,7 @@ public class ControllorePosta {
 
     
     // Metodo per assegnare un codice univoco ad un messaggio.
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "unused" })
     private static int assegnaCodice() {
         //Se non c'è nessun messaggio ritorna il codice 0
         File file = new File(Constants.MSG_PATH);
@@ -221,16 +221,15 @@ public class ControllorePosta {
             return 0;
 
         // Se il file non è vuoto calcola il primo codice disponibile
-        ArrayList<Messaggio> elencoMessaggi = new ArrayList<>();
+        //ArrayList<Messaggio> elencoMessaggi = new ArrayList<>()
         try {
-            elencoMessaggi = (ArrayList<Messaggio>) DeserializzaOggetti
+        	ArrayList<Messaggio> elencoMessaggi = (ArrayList<Messaggio>) DeserializzaOggetti
                     .deserializza(Constants.MSG_PATH);
         } catch (DeserializzazioneException e) {
             e.printStackTrace();
         }
 
-        /*int codice = elencoMessaggi.get(elencoMessaggi.size() - 1)
-                .getCodice();*/
+        //int codice = elencoMessaggi.get(elencoMessaggi.size() - 1).getCodice()
 
         Random r = new Random();
         

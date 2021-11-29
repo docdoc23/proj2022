@@ -35,13 +35,13 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/functions.js"></script>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="../js/functions.js"></script>
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://127.0.0.1:8887/js/functions.js"></script>
 </head>
 
 <body>
 <div id="logo">
-    <img src="C:\\Users\\stefa\\eclipse-workspace\\MyPlaces\\WebContent\\css\\images\\logo.png" alt="Logo"/>
+    <img src="http://127.0.0.1:8887/css/images/logo.png" alt="Logo"/>
 </div>
 
 <div class="language">

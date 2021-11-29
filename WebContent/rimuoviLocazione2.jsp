@@ -9,7 +9,7 @@
 <title>Perfect Places</title>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
 <jsp:useBean id="b" scope="request" class="boundary.BoundaryGestioneLocazioni"/>

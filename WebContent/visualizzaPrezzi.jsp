@@ -10,8 +10,8 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/functions.js"></script>
-    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="../js/functions.js" ></script>
+    <link href="http://127.0.0.1:8887/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="http://127.0.0.1:8887/js/functions.js" ></script>
 </head>
 <jsp:useBean id="bl" scope="session" class="boundary.BoundaryLogin"/>
 <%@page import="boundary.BoundaryVisualizzaPrezzo" %>
@@ -117,7 +117,7 @@
     <!-- end #header -->
     <div id="page">
         <div id="page-bgtop">
-            <ul class="topnav" id=myTopnav">
+            <ul class="topnav" id="myTopnav">
                 <li><a href="utente.jsp">HOME</a></li>
                 <li><a href="areaViaggiatore.jsp">Area Viaggiatore</a></li>
                 <li><a href="areaProprietario.jsp">Area Proprietario</a></li>
@@ -150,33 +150,33 @@
                         <%
                             if(elencoLocazioni.get(Integer.parseInt(id)).getClass()==Albergo.class){
                         %>
-                        <img src="../css/images/albergo.png"  style="width:50px;height:50px; float: left">
+                        <img src="http://127.0.0.1:8887/css/images/albergo.png"  style="width:50px;height:50px; float: left">
                         <span class="span">Nome albergo: <%out.println(nomeLocazione);%></span>
                         <%}%>
                         <%
                             if(elencoLocazioni.get(Integer.parseInt(id)).getClass()== Appartamento.class){
                         %>
-                        <img src="../css/images/appartamento.png"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/appartamento.png"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome appartamento: <%out.println(nomeLocazione);%></span>
                         <%}%>
                         <%
                             if(elencoLocazioni.get(Integer.parseInt(id)).getClass()== Beb.class){
                         %>
-                        <img src="../css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
+                        <img src="http://127.0.0.1:8887/css/images/beb.jpeg"  style="width:50px;height:50px;float: left;">
                         <span class="span">Nome b&b: <%out.println(nomeLocazione);%></span>
 
                         <%}%>
                         <%
                             if(elencoLocazioni.get(Integer.parseInt(id)).getClass()== CasaVacanza.class){
                         %>
-                        <img src="../css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/casaVacanza.png"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome casa vacanza: <%out.println(nomeLocazione);%></span>
 
                         <%}%>
                         <%
                             if(elencoLocazioni.get(Integer.parseInt(id)).getClass()== Ostello.class){
                         %>
-                        <img src="../css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
+                        <img src="http://127.0.0.1:8887/css/images/ostello.jpeg"  style="width:50px;height:50px;float: left">
                         <span class="span">Nome ostello: <%out.println(nomeLocazione);%></span>
                         <%}%>
                     <br><br><br>
@@ -249,13 +249,14 @@
                                             </select>
 
                                         </div>
+                                     </form>
                                 </td>
                             </tr>
 
                             <tr>
                                  <td>
 
-
+                                    
                                         <br>
                                         <%}else {%>
                                         <div style="float: left;width: 200px">
@@ -266,7 +267,7 @@
                                             <input type="submit" style="width: 300px; margin-left: 460px" class="btnBlue" value="CONFERMA PRENOTAZIONE">
                                         </div>
                                         <div style="clear: both"></div>
-                                    </form>
+                            
                                 </td>
                             </tr>
                             <tr>
@@ -282,18 +283,18 @@
                                  <td><p>media voti: 0 stelle</p></td>
                                 <%}
                                 if(mediaRecensioni==1) {%>
-                                <td><p style="float: left">media voti:</p><img src="../css/images/1stella.png"  style="width:150px;height:40px; float: left" ></td>
+                                <td><p style="float: left">media voti:</p><img src="http://127.0.0.1:8887/css/images/1stella.png"  style="width:150px;height:40px; float: left" ></td>
                                 <%}%>
                                 <%if(mediaRecensioni==2) {%>
-                                <td> <p style="float: left">media voti:</p><img src="../css/images/2stelle.png"  style="width:150px;height:40px; float: left" ></td>
+                                <td> <p style="float: left">media voti:</p><img src="http://127.0.0.1:8887/css/images/2stelle.png"  style="width:150px;height:40px; float: left" ></td>
                                 <%}%>
                                 <%if(mediaRecensioni==3) {%>
-                                <td><p style="float: left">media voti:</p><img src="../css/images/3stelle.png"  style="width:150px;height:40px; float: left" ></td>
+                                <td><p style="float: left">media voti:</p><img src="http://127.0.0.1:8887/css/images/3stelle.png"  style="width:150px;height:40px; float: left" ></td>
                                 <%}%>
                                 <%if(mediaRecensioni==4) {%>
-                                <td><p style="float: left">media voti:</p><img src="../css/images/4stelle.png"  style="width:150px;height:40px; float: left" ></td>
+                                <td><p style="float: left">media voti:</p><img src="http://127.0.0.1:8887/css/images/4stelle.png"  style="width:150px;height:40px; float: left" ></td>
                                 <%}%><%if(mediaRecensioni==5) {%>
-                                <td><p style="float: left">media voti:</p><img src="../css/images/5stelle.png"  style="width:150px;height:40px; float: left" ></td>
+                                <td><p style="float: left">media voti:</p><img src="http://127.0.0.1:8887/css/images/5stelle.png"  style="width:150px;height:40px; float: left" ></td>
                                 <%}%>
                             </tr>
                         </table>
@@ -312,16 +313,16 @@
                                                 <span>(0 stelle)</span>
                                                 <%}%>
                                                 <%if(rec.getNumeroStelle()==1){%>
-                                                        <img src="../css/images/1stella.png"  style="width:80px;height:20px; float: left" >
+                                                        <img src="http://127.0.0.1:8887/css/images/1stella.png"  style="width:80px;height:20px; float: left" >
                                                 <%}%>
                                                 <%if(rec.getNumeroStelle()==2){%>
-                                                <img src="../css/images/2stelle.png"  style="width:80px;height:20px; float: left" >
+                                                <img src="http://127.0.0.1:8887/css/images/2stelle.png"  style="width:80px;height:20px; float: left" >
                                                 <%}%><%if(rec.getNumeroStelle()==3){%>
-                                                <img src="../css/images/3stelle.png"  style="width:80px;height:20px; float: left" >
+                                                <img src="http://127.0.0.1:8887/css/images/3stelle.png"  style="width:80px;height:20px; float: left" >
                                                 <%}%><%if(rec.getNumeroStelle()==4){%>
-                                                <img src="../css/images/4stelle.png"  style="width:80px;height:20px; float: left" >
+                                                <img src="http://127.0.0.1:8887/css/images/4stelle.png"  style="width:80px;height:20px; float: left" >
                                                 <%}%><%if(rec.getNumeroStelle()==5){%>
-                                                <img src="../css/images/5stelle.png"  style="width:80px;height:20px; float: left" >
+                                                <img src="http://127.0.0.1:8887/css/images/5stelle.png"  style="width:80px;height:20px; float: left" >
                                                 <%}%>
 
 
