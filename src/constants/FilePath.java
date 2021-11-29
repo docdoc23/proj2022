@@ -3,7 +3,7 @@ package constants;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public final class FilePath {
+public enum FilePath {;
 	
 	public static final Path path = Paths.get("C:\\Users\\stefa\\eclipse-workspace\\MyPlaces\\");
 	public static final Path alb_path = path.resolve("data\\location\\alberghi");
